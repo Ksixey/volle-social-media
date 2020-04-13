@@ -14,7 +14,9 @@ export const ProfileInfo = ({profile, saveProfile,  ...props}) => {
     let [editMode, setEditMode] = useState(false);
 
     if (!profile) {
-        return  <Preloader/>
+        return  <div className={classes.profileInfoContainer}>
+            <Preloader/>
+        </div>
     }
 
 const changeProfile= (data) => {

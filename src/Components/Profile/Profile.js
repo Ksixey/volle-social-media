@@ -3,13 +3,10 @@ import MyPostsContainer from "../../Containers/MyPostContainer";
 import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
 
 const Profile = (props) => {
-   
-    return (
-        <>
+return <>
         <ProfileInfo {...props }  />
         {!props.userId && <MyPostsContainer  />}
-        </>
-    )
+    </>
 };
 
 export default Profile

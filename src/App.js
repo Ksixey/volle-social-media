@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route,Switch} from 'react-router-dom';
+import {Route,Switch, Redirect} from 'react-router-dom';
 import HeaderContainer from "./Containers/HeaderContainer";
 import Nav from "./Components/Nav-bar/Nav";
 import ProfileContainer from "./Containers/ProfileContainer";
@@ -12,11 +12,12 @@ import {Preloader} from "./Components/Common/Preloader/Preloader";
 import {Provider} from 'react-redux'
 import {store} from "./redux-store/store";
 import {HashRouter} from "react-router-dom";
-import {withSuspence} from './HOC/withSuspence'
+import {withSuspence} from './HOC/withSuspence';
+import {PageNotFound} from './Components/PageNotFound/PageNotFound'
 
 const DialogContainer = React.lazy(() => import("./Containers/DialogContainer"));
 const UserContainer = React.lazy(() => import("./Containers/UsersContainer"));
-const Login = React.lazy(() => import("./Components/Login/Login"))
+const Login = React.lazy(() => import("./Components/Login/Login"));
 
 class App extends React.Component{
     componentDidMount() {
@@ -31,10 +32,12 @@ class App extends React.Component{
             <Nav/>
             <div className='app-wrappper-content'>
                 <Switch>
+                    <Redirect from='/' exact to="/profile" />
                     <Route path='/profile/:userId?'  render={() => <ProfileContainer /> } />
                     <Route path='/dialogs' render={ withSuspence (DialogContainer)  } />
                     <Route path='/user' render={withSuspence (UserContainer )}/>
                     <Route path='/login' render={withSuspence(Login)}/>
+                    <Route path='/*' render={()=> <PageNotFound/>} />
                 </Switch>
             </div>
         </div>

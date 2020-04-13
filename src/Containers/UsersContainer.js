@@ -25,7 +25,7 @@ class UsersContainer extends React.Component {
             <Paginator currentPage={ this.props.currentPage} onPageChanged={ this.onPageChanged}
         totalItemsCount={ this.props.totalUsersCount} pageSize={ this.props.pageSize} />
         
-            {this.props.isFetching ? <Preloader/> : <Users {...this.props}
+            {this.props.isFetching ? <Preloader /> : <Users {...this.props}
                                                         onPageChanged={this.onPageChanged}
             />}
         </>

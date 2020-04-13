@@ -1,0 +1,10 @@
+.pageNotFoundContainer{
+    display: grid;
+    justify-content: center;
+}
+
+.pageNotFoundTitle{
+    text-transform: uppercase;
+    color:rgba(29, 171, 255, 0.53);
+    font-size: 50px;
+}
