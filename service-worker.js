@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/volle-social-media/precache-manifest.50353536d036f7bb829ec0457ff20512.js"
+  "/volle-social-media/precache-manifest.77031784a94ae3b4fb39c0a79f3948e9.js"
 );
 
 self.addEventListener('message', (event) => {
