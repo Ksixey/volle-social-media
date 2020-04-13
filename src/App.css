@@ -1,0 +1,23 @@
+.app-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap:10px;
+  grid-template-areas: "header header header"
+  "navs content content";
+}
+
+.app-wrapper-content{
+  grid-area: content;
+}
+
+.dialogContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+
+
+

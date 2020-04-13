@@ -1,0 +1,10 @@
+.loginContainer {
+    display: grid;
+    justify-content: center;
+}
+
+.loginTitle{
+    font-size: 30px;
+    justify-self: center;
+    text-transform: uppercase;
+}

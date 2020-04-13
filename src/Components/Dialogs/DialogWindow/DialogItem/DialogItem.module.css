@@ -1,0 +1,15 @@
+.dialog{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 0;
+    list-style: none;
+}
+
+.list{
+    text-decoration: none;
+    color: rgba(22, 22, 22, 0.85);
+}
+
+.active {
+    color: #a7dde7;
+}

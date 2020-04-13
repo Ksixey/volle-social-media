@@ -1,0 +1,9 @@
+.imgProfile {
+  width: 100%;
+  height: 200px; }
+
+.postsContainer {
+  display: grid;
+  justify-content: center;
+}
+

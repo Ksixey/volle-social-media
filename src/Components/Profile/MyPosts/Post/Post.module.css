@@ -1,0 +1,22 @@
+.item{
+    max-width: 700px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.imgWrapper {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.textPost{
+    align-self: center;
+    display: inline-block;
+}

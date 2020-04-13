@@ -1,0 +1,98 @@
+.profileInfoContainer{
+    display: grid;
+    grid-row-gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.photoContainer{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid rgba(29, 171, 255, 0.53);
+    justify-self: center;
+}
+
+.fullName {
+    justify-self: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.linkContainer {
+    justify-self: center;
+}
+
+.linkSite{
+    padding:0 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.containerInforms{
+    justify-self: center;
+    padding: 10px 0;
+}
+
+.allInfoContainer{
+    display: grid;
+    justify-content: center;
+}
+
+.buttonEdit{ 
+    justify-self: center;
+    cursor: pointer;
+    background-color: rgba(29, 171, 255, 0.53);
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border:  0.1px solid rgba(29, 171, 255, 0.53);
+}
+
+.buttonEdit:hover{ 
+    background-color: #f1ffff;
+    color: rgba(29, 171, 255, 0.53);
+}
+
+.containerContact{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.linkContact{
+    justify-self: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(29, 171, 255, 0.53);
+}
+
+.linkContact:hover{
+    color: #da70d6;
+}
+
+.spanInfoSections{
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+.statusContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.spanStatus{
+    font-size: 18px;
+}
+
+.inputStatus:focus{
+    border: 1px solid rgba(29, 171, 255, 0.53);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: rgba(29, 171, 255, 0.53);
+}
