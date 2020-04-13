@@ -1,0 +1,1 @@
+{"version":3,"sources":["Login.module.css"],"names":[],"mappings":"AAAA,6BACI,YAAa,CACb,sBACJ,CAEA,yBACI,cAAe,CACf,mBAAoB,CACpB,wBACJ","file":"5.55f63d7c.chunk.css","sourcesContent":[".loginContainer {\r\n    display: grid;\r\n    justify-content: center;\r\n}\r\n\r\n.loginTitle{\r\n    font-size: 30px;\r\n    justify-self: center;\r\n    text-transform: uppercase;\r\n}"]}
